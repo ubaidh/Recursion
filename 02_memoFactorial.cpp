@@ -20,24 +20,24 @@ unsigned long long fact(int n){
     }
 }
 int main(){
-	using namespace std::chrono;
-	high_resolution_clock::time_point t1 = high_resolution_clock::now();
+	
+	std::chrono::high_resolution_clock::time_point t1 = std::chrono::high_resolution_clock::now();
 	for(int i=1;i<=20;i++){
 		std::cout<<factm(i)<<"\n ";
 	}   
-	high_resolution_clock::time_point t2 = high_resolution_clock::now();
+	std::chrono::high_resolution_clock::time_point t2 = std::chrono::high_resolution_clock::now();
 
-	duration<double> time_span = duration_cast<duration<double>>(t2 - t1);
+	std::chrono::duration<double> time_span = std::chrono::duration_cast<std::chrono::duration<double>>(t2 - t1);
   	std::cout << "It took me " << time_span.count() << " seconds.";
   	std::cout << std::endl;
 
-  	high_resolution_clock::time_point t3 = high_resolution_clock::now();
+  	std::chrono::high_resolution_clock::time_point t3 = std::chrono::high_resolution_clock::now();
 	for(int i=1;i<=20;i++){
 		std::cout<<fact(i)<<"\n ";
 	}   
-	high_resolution_clock::time_point t4 = high_resolution_clock::now();
+	std::chrono::high_resolution_clock::time_point t4 = std::chrono::high_resolution_clock::now();
 
-	duration<double> time_span1 = duration_cast<duration<double>>(t4 - t3);
+	std::chrono::duration<double> time_span1 = std::chrono::duration_cast<std::chrono::duration<double>>(t4 - t3);
   	std::cout << "It took me " << time_span1.count() << " seconds.";
   	std::cout << std::endl;
 }
