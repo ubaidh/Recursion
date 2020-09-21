@@ -7,5 +7,3 @@ int main(){
     std::cout<<fact(20)<<"\n ";
 }
 
-
-//g++ -std=c++11 -o 01_factorial.cpp
