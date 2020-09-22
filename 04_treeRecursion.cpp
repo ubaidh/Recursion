@@ -1,5 +1,5 @@
 #include<iostream>
-
+//tree recursion
 void fun(int n){  
     if(n>0){
         printf("%d ",n);
@@ -7,7 +7,8 @@ void fun(int n){
         printf("\n");
         printf("%d ",n);
         fun(n-1); 
-    }  
+    } 
+
 }
 
 int main(){
