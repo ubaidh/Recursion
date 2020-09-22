@@ -1,6 +1,6 @@
 #include<iostream>
 
-//Using Recursive Euclid Algorithm
+//Using Recursive Euclid Algorithm for gcd
 
 int gcd(int x, int y){
   if (y == 0) return x;
