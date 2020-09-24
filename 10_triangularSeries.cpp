@@ -1,5 +1,7 @@
 // trianglar series 
+
 #include<iostream>
+
 int func(int c){
     if(c < 2){
         return 1;
