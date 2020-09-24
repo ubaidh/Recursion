@@ -1,19 +1,10 @@
-// trianglar series 
-
-#include<iostream>
-
-int func(int c){
-    if(c < 2){
-        return 1;
-    }else{
-        return c+func(c-1);
-    }
+#include <iostream>
+int tri(int n){
+  if(n<2) return 1;
+  else return n+tri(n-1);
 }
-
-int main(){
-    int num;
-    std::cin>>num;
-    for(int i=1;i<num;i++){
-        printf("%d ",func(i));
-    }   
+int main() {
+  for(int i=0;i<10;i++){
+    std::cout<<tri(i)<<" ";
+  }
 }
