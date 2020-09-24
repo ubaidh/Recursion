@@ -1,6 +1,6 @@
 #include <iostream>
 int tri(int n){
-  if(n<2) return 1;
+  if(n<2) return n;
   else return n+tri(n-1);
 }
 int main() {
