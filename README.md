@@ -7,7 +7,9 @@ Recursion is a method of solving a problem where the solution depends on solutio
 4. indirect recursion
 5. nested recursion
 
+
 ### Tail recusion
+
 ```c++
 void func(int n){
     if(n>1){
@@ -18,6 +20,7 @@ void func(int n){
 }
 ```
 ### Head recursion
+
 ```c++
 void func(int n){
     if(n>1){
@@ -31,6 +34,7 @@ void func(int n){
 all process is done at returing time
 
 ### Tree recursion 
+
 ```c++
 void fun(int n){
     if(n>0){
@@ -42,6 +46,7 @@ void fun(int n){
     }
 }
 ```
+
 if a function is calling itself more than one time its tree recursion
 <br/>
 ```
